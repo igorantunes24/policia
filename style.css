@@ -1,0 +1,167 @@
+/* Variáveis de Cores e Tipografia */
+:root {
+    --primary-color: #1a2a3a;
+        --secondary-color: #2c3e50;
+            --accent-color: #2980b9;
+                --bg-color: #f4f6f9;
+                    --text-color: #333333;
+                        --white: #ffffff;
+                        }
+
+                        * {
+                            margin: 0;
+                                padding: 0;
+                                    box-sizing: border-box;
+                                    }
+
+                                    body {
+                                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                            background-color: var(--bg-color);
+                                                color: var(--text-color);
+                                                    line-height: 1.6;
+                                                    }
+
+                                                    /* Header */
+                                                    header {
+                                                        background-color: var(--primary-color);
+                                                            color: var(--white);
+                                                                text-align: center;
+                                                                    padding: 2.5rem 1rem;
+                                                                    }
+
+                                                                    header h1 {
+                                                                        font-size: 2.2rem;
+                                                                            margin-bottom: 0.5rem;
+                                                                            }
+
+                                                                            header p {
+                                                                                font-size: 1.1rem;
+                                                                                    color: #bdc3c7;
+                                                                                    }
+
+                                                                                    /* Menu de Navegação */
+                                                                                    nav {
+                                                                                        background-color: var(--secondary-color);
+                                                                                        }
+
+                                                                                        nav ul {
+                                                                                            list-style: none;
+                                                                                                display: flex;
+                                                                                                    justify-content: center;
+                                                                                                        flex-wrap: wrap;
+                                                                                                        }
+
+                                                                                                        nav ul li a {
+                                                                                                            display: block;
+                                                                                                                color: var(--white);
+                                                                                                                    padding: 1rem 1.5rem;
+                                                                                                                        text-decoration: none;
+                                                                                                                            font-weight: 600;
+                                                                                                                                transition: background-color 0.3s ease;
+                                                                                                                                }
+
+                                                                                                                                nav ul li a:hover {
+                                                                                                                                    background-color: var(--accent-color);
+                                                                                                                                    }
+
+                                                                                                                                    /* Layout Principal com Flexbox */
+                                                                                                                                    main {
+                                                                                                                                        max-width: 1200px;
+                                                                                                                                            margin: 2rem auto;
+                                                                                                                                                padding: 0 1rem;
+                                                                                                                                                    display: flex;
+                                                                                                                                                        gap: 2rem;
+                                                                                                                                                            flex-wrap: wrap;
+                                                                                                                                                            }
+
+                                                                                                                                                            article {
+                                                                                                                                                                flex: 3;
+                                                                                                                                                                    min-width: 280px;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    section {
+                                                                                                                                                                        background-color: var(--white);
+                                                                                                                                                                            padding: 2rem;
+                                                                                                                                                                                margin-bottom: 1.5rem;
+                                                                                                                                                                                    border-radius: 8px;
+                                                                                                                                                                                        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+                                                                                                                                                                                        }
+
+                                                                                                                                                                                        section h2 {
+                                                                                                                                                                                            color: var(--primary-color);
+                                                                                                                                                                                                margin-bottom: 1rem;
+                                                                                                                                                                                                    font-size: 1.5rem;
+                                                                                                                                                                                                        border-bottom: 2px solid var(--accent-color);
+                                                                                                                                                                                                            padding-bottom: 0.5rem;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            section p {
+                                                                                                                                                                                                                margin-bottom: 1rem;
+                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                section img {
+                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                        height: auto;
+                                                                                                                                                                                                                            border-radius: 6px;
+                                                                                                                                                                                                                                margin-top: 1rem;
+                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                /* Listas e Citações */
+                                                                                                                                                                                                                                ul {
+                                                                                                                                                                                                                                    margin-left: 1.5rem;
+                                                                                                                                                                                                                                        margin-bottom: 1rem;
+                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                        blockquote {
+                                                                                                                                                                                                                                            border-left: 4px solid var(--accent-color);
+                                                                                                                                                                                                                                                padding-left: 1rem;
+                                                                                                                                                                                                                                                    margin: 1.5rem 0;
+                                                                                                                                                                                                                                                        font-style: italic;
+                                                                                                                                                                                                                                                            color: #555555;
+                                                                                                                                                                                                                                                                background-color: #f9f9f9;
+                                                                                                                                                                                                                                                                    padding: 1rem;
+                                                                                                                                                                                                                                                                        border-radius: 0 4px 4px 0;
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                        /* Aside / Barra Lateral */
+                                                                                                                                                                                                                                                                        aside {
+                                                                                                                                                                                                                                                                            flex: 1;
+                                                                                                                                                                                                                                                                                min-width: 250px;
+                                                                                                                                                                                                                                                                                    background-color: var(--white);
+                                                                                                                                                                                                                                                                                        padding: 2rem;
+                                                                                                                                                                                                                                                                                            border-radius: 8px;
+                                                                                                                                                                                                                                                                                                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+                                                                                                                                                                                                                                                                                                    height: fit-content;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    aside h3 {
+                                                                                                                                                                                                                                                                                                        color: var(--primary-color);
+                                                                                                                                                                                                                                                                                                            margin-bottom: 1rem;
+                                                                                                                                                                                                                                                                                                                font-size: 1.2rem;
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                aside p {
+                                                                                                                                                                                                                                                                                                                    font-size: 0.95rem;
+                                                                                                                                                                                                                                                                                                                        margin-bottom: 1rem;
+                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                        /* Footer */
+                                                                                                                                                                                                                                                                                                                        footer {
+                                                                                                                                                                                                                                                                                                                            background-color: var(--primary-color);
+                                                                                                                                                                                                                                                                                                                                color: var(--white);
+                                                                                                                                                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                                                                                                                                                        padding: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                            margin-top: 2rem;
+                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                            /* Responsividade (Mobile) */
+                                                                                                                                                                                                                                                                                                                                            @media (max-width: 768px) {
+                                                                                                                                                                                                                                                                                                                                                main {
+                                                                                                                                                                                                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                                                                                                    nav ul {
+                                                                                                                                                                                                                                                                                                                                                                            flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                        }
